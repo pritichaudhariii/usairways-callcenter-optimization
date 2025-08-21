@@ -1,4 +1,4 @@
-U.S. Airways Preferred Customer Service – Queueing & Solver Optimization
+**U.S. Airways Preferred Customer Service – Queueing & Solver Optimization**
 
 This project models and optimizes staffing for a call center dedicated to Preferred Customers. Using a queueing approach and Excel Solver, it compares service targets of 30s vs 45s average hold time, then designs a cost-efficient hybrid schedule of full-time and part-time agents.
 

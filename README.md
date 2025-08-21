@@ -9,64 +9,10 @@ This project models and optimizes staffing for a call center dedicated to Prefer
 
 📊 Approach
 
-Queueing model to estimate minimum agents by time block/day. Parameters include:
-
-Processing time 
-𝑝
-=
-6.41
-p=6.41 min, utilization 
-𝑈
-=
-𝑝
-/
-(
-𝑎
-⋅
-𝑚
-)
-U=p/(a⋅m), 
-𝐶
-𝑉
-𝑎
-2
-=
-𝐶
-𝑉
-𝑝
-2
-=
-1
-CV
-a
-2
-	​
-
-=CV
-p
-2
-	​
-
-=1, hold-time target 
-𝑇
-𝑞
-∈
-{
-30
-𝑠
-,
-45
-𝑠
-}
-T
-q
-	​
-
-∈{30s,45s}. 
-
-Excel Solver to create an optimized weekly schedule:
-
-8.5-hour full-time shifts (4-1-4), 4-hour part-time shifts, wage $14/hr + 25% benefits = $17.50/hr. 
+1. **Queueing model** to estimate minimum agents by time block/day. Parameters include:
+- Processing time 𝑝 = 6.41 min, utlization 𝑈 = 𝑝/(𝑎⋅𝑚), 𝐶𝑉𝑎^2 = 𝐶𝑉𝑝^2 = 1, hold-time target 𝑇𝑞 ∈ {30𝑠,45𝑠}.
+2. **Excel Solver** to create an optimized weekly schedule:
+- 8.5-hour full-time shifts (4-1-4), 4-hour part-time shifts, wage $14/hr + 25% benefits = $17.50/hr. 
 
 ✅ Key Results
 

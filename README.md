@@ -33,12 +33,12 @@ Sun 46, Mon 52, Tue 48, Wed 49, Thu 55, Fri 56, Sat 36 → **Total 342.**
 
 🔁 How to Reproduce (Excel)
 
-1.Open the provided Excel files in /data.
-2.Verify input tables for **arrival rates by hour/day** and the **service-time parameter p.**
-3.Use the queueing sheet to compute **minimum agents** per time block for **30s** and **45s** targets (as defined above). 
-4.Open the **Solver** configuration and optimize staffing subject to:
+1. Open the provided Excel files in /data.
+2. Verify input tables for **arrival rates by hour/day** and the **service-time parameter p.**
+3. Use the queueing sheet to compute **minimum agents** per time block for **30s** and **45s** targets (as defined above). 
+4. Open the **Solver** configuration and optimize staffing subject to:
 - shift rules (FT 8.5h, PT 4h), integer agent counts, coverage ≥ required agents. 
-5.Compare weekly totals and cost outputs; confirm **~$1,607** delta and **~4–5%** increase under the 30s target. 
+5. Compare weekly totals and cost outputs; confirm **~$1,607** delta and **~4–5%** increase under the 30s target. 
 
 🧠 Assumptions
 

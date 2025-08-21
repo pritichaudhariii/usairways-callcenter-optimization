@@ -16,20 +16,19 @@ This project models and optimizes staffing for a call center dedicated to Prefer
 
 ✅ Key Results
 
-Total weekly cost: $37,412 (45s) vs $39,019 (30s) → +$1,607 (~4.3%) for 30s target. 
-
-Staffing (sample, 30s) totals to 355 agents across the week (FT/PT mix). 
-
-Staffing (sample, 45s) totals to 342 agents. 
-
-Peak demand occurs Thu–Fri; weekends are lighter. 
+- Total weekly cost: $37,412 (45s) vs $39,019 (30s) → +$1,607 (~4.3%) for 30s target. 
+- Staffing (sample, 30s) totals to 355 agents across the week (FT/PT mix). 
+- Staffing (sample, 45s) totals to 342 agents. 
+- Peak demand occurs Thu–Fri; weekends are lighter. 
 
 📅 Proposed Weekly Schedules (excerpt)
 
-30s target – daily totals (FT + PT):
+**30s target** – daily totals (FT + PT):
+
 Sun 50, Mon 54, Tue 50, Wed 50, Thu 57, Fri 56, Sat 38 → Total 355. 
 
-45s target – daily totals (FT + PT):
+**45s target** – daily totals (FT + PT):
+
 Sun 46, Mon 52, Tue 48, Wed 49, Thu 55, Fri 56, Sat 36 → Total 342.
 
 🔁 How to Reproduce (Excel)

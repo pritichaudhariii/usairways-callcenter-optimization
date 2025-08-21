@@ -4,9 +4,8 @@ This project models and optimizes staffing for a call center dedicated to Prefer
 
 🧭 Problem & Objectives
 
-Improve response speed and quality for preferred customers while controlling cost. 
-
-Targets: reduce average hold time from 45s to 30s; compute minimum agents; design an efficient staffing schedule. 
+- Improve response speed and quality for preferred customers while controlling cost. 
+- Targets: reduce average hold time from 45s to 30s; compute minimum agents; design an efficient staffing schedule. 
 
 📊 Approach
 

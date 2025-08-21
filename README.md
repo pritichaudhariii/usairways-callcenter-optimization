@@ -25,61 +25,32 @@ This project models and optimizes staffing for a call center dedicated to Prefer
 
 **30s target** – daily totals (FT + PT):
 
-Sun 50, Mon 54, Tue 50, Wed 50, Thu 57, Fri 56, Sat 38 → Total 355. 
+Sun 50, Mon 54, Tue 50, Wed 50, Thu 57, Fri 56, Sat 38 → **Total 355.** 
 
 **45s target** – daily totals (FT + PT):
 
-Sun 46, Mon 52, Tue 48, Wed 49, Thu 55, Fri 56, Sat 36 → Total 342.
+Sun 46, Mon 52, Tue 48, Wed 49, Thu 55, Fri 56, Sat 36 → **Total 342.**
 
 🔁 How to Reproduce (Excel)
 
-Open the provided Excel files in /data.
-
-Verify input tables for arrival rates by hour/day and the service-time parameter p.
-
-Use the queueing sheet to compute minimum agents per time block for 30s and 45s targets (as defined above). 
-
-Open the Solver configuration and optimize staffing subject to:
-
-shift rules (FT 8.5h, PT 4h), integer agent counts, coverage ≥ required agents. 
-
-Compare weekly totals and cost outputs; confirm ~$1,607 delta and ~4–5% increase under the 30s target. 
+1.Open the provided Excel files in /data.
+2.Verify input tables for **arrival rates by hour/day** and the **service-time parameter p.**
+3.Use the queueing sheet to compute **minimum agents** per time block for **30s** and **45s** targets (as defined above). 
+4.Open the **Solver** configuration and optimize staffing subject to:
+- shift rules (FT 8.5h, PT 4h), integer agent counts, coverage ≥ required agents. 
+5.Compare weekly totals and cost outputs; confirm **~$1,607** delta and **~4–5%** increase under the 30s target. 
 
 🧠 Assumptions
 
-𝐶
-𝑉
-𝑎
-2
-=
-𝐶
-𝑉
-𝑝
-2
-=
-1
-CV
-a
-2
-	​
-
-=CV
-p
-2
-	​
-
-=1 (exponential inter-arrival and service).
-
-Hourly wage $17.50 (incl. 25% benefits).
-
-Hybrid staffing: FT covers base demand; PT flexes to peaks. 
+- 𝐶𝑉𝑎^2 = 𝐶𝑉𝑝^2 = 1 (exponential inter-arrival and service).
+- Hourly wage **$17.50** (incl. 25% benefits).
+- Hybrid staffing: FT covers base demand; PT flexes to peaks. 
 
 🔍 Insights
 
-Better CX vs Cost Trade-off: 30s improves service but raises weekly cost by ~4–5%. 
-
-Peaks: Thu–Fri need the most agents; weekends are off-peak. 
+- **Better CX vs Cost Trade-off:** 30s improves service but raises weekly cost by ~4–5%. 
+- **Peaks:** Thu–Fri need the most agents; weekends are off-peak. 
 
 🛠️ Tools
 
-Microsoft Excel (Queueing calculations + Solver)
+Microsoft Excel (Queueing calculations + **Solver**)
